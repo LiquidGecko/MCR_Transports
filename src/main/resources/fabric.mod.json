@@ -3,9 +3,9 @@
 	"id": "mc-redesign-transports",
 	"version": "${version}",
 	"name": "MC Redesign: Transports",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "a minecraft redesign mod, this pack is focused on transportations",
 	"authors": [
-		"Me!"
+		"LiquidGecko"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -17,13 +17,19 @@
 	"entrypoints": {
 		"main": [
 			{
-				"value": "fr.liquidgecko.mcr_transports.ExampleMod",
+				"value": "fr.liquidgecko.mcr_transports.MCRTransports",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "fr.liquidgecko.mcr_transports.MCRTransportsClient",
 				"adapter": "kotlin"
 			}
 		],
 		"fabric-datagen": [
 			{
-				"value": "fr.liquidgecko.mcr_transports.ExampleModDataGenerator",
+				"value": "fr.liquidgecko.mcr_transports.MCRTransportsDataGenerator",
 				"adapter": "kotlin"
 			}
 		]
